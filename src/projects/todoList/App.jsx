@@ -17,6 +17,7 @@ function App() {
       let restOfItems = works.filter((work, i) => indexUpdate !== i)
       setWorks([...restOfItems, task.trim()])
       setTask("")
+      
       setUpdate(false)
     } else {
       setWorks([...works, task.trim()])
